@@ -1,0 +1,32 @@
+@font-face{
+	font-family: changa-Bold;
+	src: url('../fonts/Changa-Bold.ttf');
+}
+@font-face{
+	font-family: changa-ExtraBold;
+	src: url('../fonts/Changa-ExtraBold.ttf');
+}
+@font-face{
+	font-family: changa-ExtraLight;
+	src: url('../fonts/Changa-ExtraLight.ttf');
+}
+@font-face{
+	font-family: changa-Light;
+	src: url('../fonts/Changa-Light.ttf');
+}
+@font-face{
+	font-family: changa-Medium;
+	src: url('../fonts/Changa-Medium.ttf');
+}
+@font-face{
+	font-family: changa-Regular;
+	src: url('../fonts/Changa-Regular.ttf');
+}
+@font-face{
+	font-family: changa-SemiBold;
+	src: url('../fonts/Changa-SemiBold.ttf');
+}
+@font-face{
+	font-family: DaysOne-Regular;
+	src: url('../fonts/DaysOne-Regular.ttf');
+}

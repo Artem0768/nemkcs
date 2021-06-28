@@ -1,0 +1,238 @@
+@charset "UTF-8";
+/*очиска стилів*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+body {
+  background: #000;
+  font-family: "Changa-Medium";
+  font-style: normal;
+  font-weight: normal;
+  color: #FFFFFF;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000;
+  -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.2) inset;
+          box-shadow: 0 0 2px rgba(0, 0, 0, 0.2) inset;
+}
+
+::-webkit-scrollbar-thumb {
+  color: #fff;
+  background: linear-gradient(102.42deg, rgba(148, 25, 193, 0.23) 0.39%, rgba(125, 34, 186, 0.406325) 23.53%, rgba(41, 46, 192, 0.72) 68.15%, #060B88 92.01%), #0D0B41;
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #7c7c7c;
+}
+
+.hr__test {
+  width: 40px;
+  /*лінія перекинута*/
+  height: 6px;
+  border: none;
+  background: -webkit-gradient(linear, right top, left top, from(#272B9C), to(#E70BDE));
+  background: linear-gradient(to left, #272B9C, #E70BDE);
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  margin-left: -17px;
+}
+
+@media (max-width: 510px) {
+  .status {
+    top: 64px;
+  }
+}
+.hr__tournaments {
+  margin: 17px 17px 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 24px;
+  text-decoration: none;
+}
+
+#tab__matches {
+  /*background */
+  margin: 0 10px;
+  max-width: 833px;
+  height: 100%;
+  font-family: "Changa";
+  font-style: normal;
+  font-weight: normal;
+  line-height: 20px;
+  font-size: calc(12px + 4 * ((100vw - 320px) / 1559));
+}
+
+.content__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-preferred-size: content;
+      flex-basis: content;
+  max-width: 794px;
+  width: 100%;
+  height: 81px;
+  background: #0F0D0D;
+  border-radius: 6px;
+  margin: 25px 0 23px 0;
+  position: relative;
+  padding: 5px 5px;
+}
+
+.icons img {
+  width: 45px;
+  height: 46px;
+}
+
+.score {
+  background: #000000;
+  border-radius: 4px;
+  width: 28px;
+  height: 31px;
+  text-align: center;
+  padding-top: 6px;
+}
+
+.score, .icons img {
+  margin-left: 10px;
+}
+
+.comand {
+  font-size: calc(14px + 4 * ((100vw - 320px) / 1559));
+  margin-left: 10px;
+}
+
+.status {
+  position: absolute;
+  right: 5px;
+}
+
+.date__match {
+  font-family: "DaysOne-Regular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: calc(8px + 6 * ((100vw - 320px) / 1559));
+  line-height: 6px;
+}
+
+.type__match {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-family: "DaysOne-Regular";
+}
+
+.content__center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.rows__two {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@font-face {
+  font-family: "RalewayRegular";
+  src: url("../../fonts/RalewayRegular.ttf") format("truetype");
+  src: url("../../fonts/DaysOne-Regular.ttf") format("truetype");
+  src: url("../../fonts/Changa.ttf") format("truetype");
+  src: url("../../fonts/Changa-Bold.ttf") format("truetype");
+  src: url("../../fonts/Changa-Medium.ttf") format("truetype");
+}
